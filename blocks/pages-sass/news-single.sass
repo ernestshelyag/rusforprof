@@ -1,0 +1,184 @@
+.news-single
+  +wrp
+  &__content
+    border-top: solid 1px $main-color-gray
+    +r(580)
+      border: none
+  &__title-block
+    +r(830)
+      margin: 15px 0
+  &__title
+    line-height: 2
+    font-size: 24px
+    font-weight: 800
+    color: $main-color
+    padding: 50px 0 30px
+    +rn
+      font-size: 20px
+      padding: 30px 0 0
+    +rm
+      font-size: 15px
+    +r(580)
+      padding: 10px 0
+  &__date
+    color: $main-color
+    font-style: italic
+    padding: 10px 0
+    display: inline-block
+    margin-top: 5px
+    position: relative
+    +r(1200)
+      display: block
+      text-align: right
+      padding: 5px 0
+      margin-top: 0
+      font-size: 12px
+      &:before, &:after
+        display: none
+    &:before, &:after
+      content: ""
+      position: absolute
+      left: 0
+      height: 1px
+      width: 40px
+      background: $main-color-gray
+    &:before
+      bottom: 0
+    &:after
+      top: 0
+  &__info-block
+    margin-top: 30px
+    min-height: 400px
+    +r(595)
+      margin-top: 10px
+  &__img
+    margin: 0 50px 50px 0
+    width: auto
+    max-width: 490px
+    float: left
+    +rn
+      margin: 0 30px 5px 0
+    +rm
+      margin: 0 10px 0
+      width: 340px
+    +r(595)
+      float: none
+      width: 100%
+      max-width: 100%
+      margin: 0
+  &__text
+    font-size: 17px
+    font-weight: 600
+    +rn
+      font-size: 15px
+    +rm
+      font-size: 12px
+  &__bottom-block
+    padding: 0 150px
+    margin-top: 50px
+    display: flex
+    justify-content: space-around
+    align-items: center
+    height: 145px
+    border-top: solid 1px $main-color-gray
+    +r(1170)
+      padding: 0 30px
+      margin-top: 30px
+    +rm
+      height: 100px
+    +r(485)
+      flex-direction: column
+      padding: 10px 0
+      margin-top: 20px
+      height: auto
+  &__mid-title
+    text-align: center
+    padding: 30px 0
+    border-top: solid 1px $main-color-gray
+    font-weight: 700
+    position: relative
+    color: $main-color
+    +r(740)
+      padding-bottom: 0
+      &:before
+        display: none
+    +r(475)
+      padding: 20px 0 0
+    &:before
+      content: ""
+      position: absolute
+      bottom: 0
+      left: 0
+      right: 0
+      margin: auto
+      width: 50%
+      height: 1px
+      background: $main-color-gray
+    &:last-child
+      padding-bottom: 0
+      margin-bottom: 0
+      &:before
+        display: none
+  &__mid-list
+    margin: 30px 0
+    +rm
+      margin: 0
+  &__mid-item
+    color: $main-color
+    margin: 20px 0
+  &__mid-text
+    line-height: 1.5
+    display: block
+    padding: 9px 0
+    position: relative
+    +rm
+      font-size: 14px
+      padding: 0
+    &:before
+      transition: all .3s ease
+      content: ""
+      position: absolute
+      bottom: 0
+      left: 0
+      height: 1px
+      width: 40px
+      background: $main-color-gray
+  &__download
+      margin: 10px auto 30px
+      display: block
+  &__mid-list
+    text-align: left
+  a
+    +line
+    display: inline-block
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

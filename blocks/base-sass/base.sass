@@ -1,0 +1,74 @@
+$browser-context: 16 // Default
+
+@function em($pixels, $context: $browser-context)
+  @return #{$pixels/$context}em
+
+*, *:before, *:after
+  box-sizing: border-box
+  -moz-box-sizing: border-box
+
+*::selection
+  background: rgba($main-color,.93)
+  color: #fff
+
+html
+  -webkit-text-size-adjust: none
+  text-size-adjust: none
+
+body
+  font-family: $main-font
+  font-weight: 400
+  color: $main-color-darker
+  font-size: 16px
+  //overflow-x: hidden
+  z-index: 100
+  position: relative
+  display: flex
+  flex-direction: column
+
+html, body
+  height: 100%
+
+main
+  flex-grow: 1
+  position: relative
+  z-index: 20
+
+section
+  position: relative
+  z-index: 10
+
+a
+  display: inline-block
+  outline: none
+  transition: all .3s ease-in
+  color: $main-color
+
+p
+  font-size: 12px
+  line-height: 2
+  margin: 1em 0
+
+img
+  width: 340px
+  height: auto
+  max-height: 340px
+  object-fit: cover
+
+strong
+  font-weight: 700
+
+button
+  border: 0
+  outline: 0
+  background-color: transparent
+  cursor: pointer
+
+input[type="text"],
+input[type="submit"],
+input[type="button"],
+select,
+textarea
+  appearance: none
+  outline: 0
+  font-family: $main-font

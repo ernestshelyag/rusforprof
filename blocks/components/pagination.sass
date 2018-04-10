@@ -1,0 +1,77 @@
+.pagination
+  height: 100px
+  max-width: 860px
+  margin: 50px auto 0
+  border-top: solid 1px $main-color-gray
+  display: flex
+  justify-content: center
+  align-items: center
+  &__item
+    margin: 0 30px
+    min-width: 45px
+    min-height: 45px
+    border-radius: 50%
+    transition: all .3s
+    position: relative
+    +rn
+      margin: auto
+    &:hover
+      border: solid 1px $main-color
+      &::before, &:after
+        border-top: $main-color solid 1px
+        border-right: $main-color solid 1px
+    &_left-double-arrow, &_right-double-arrow
+      +rm
+        display: none
+    &_left-arrow, &_left-double-arrow
+      &:before
+        content: ""
+        width: 18px
+        height: 18px
+        +zero
+        left: 10px
+        border-top: $main-color-gray solid 1px
+        border-right: $main-color-gray solid 1px
+        transform: rotate(-135deg)
+    &_left-double-arrow
+      &:after
+        content: ""
+        width: 18px
+        height: 18px
+        +zero
+        border-top: $main-color-gray solid 1px
+        border-right: $main-color-gray solid 1px
+        transform: rotate(-135deg)
+    &_right-arrow, &_right-double-arrow
+      &:before
+        content: ""
+        width: 18px
+        height: 18px
+        +zero
+        right: 10px
+        border-top: $main-color-gray solid 1px
+        border-right: $main-color-gray solid 1px
+        transform: rotate(45deg)
+    &_right-double-arrow
+      &:after
+        content: ""
+        width: 18px
+        height: 18px
+        +zero
+        border-top: $main-color-gray solid 1px
+        border-right: $main-color-gray solid 1px
+        transform: rotate(45deg)
+  &__num-block
+      margin-top: 4px
+      display: flex
+      justify-content: space-between
+      align-items: center
+  &__link
+    color: $main-color-darker
+    padding: 0 10px
+    font-weight: 600
+    &:hover
+      color: $main-color
+      text-decoration: underline
+
+

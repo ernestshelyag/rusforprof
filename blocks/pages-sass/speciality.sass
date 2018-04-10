@@ -1,0 +1,69 @@
+.speciality
+  .about
+    &__title-block
+      border-bottom: solid 1px $main-color-gray
+      padding-bottom: 20px
+    &__title::before
+      display: none
+
+.middle-block
+  &__mid-title
+    text-align: center
+    padding: 30px 0
+    border-top: solid 1px $main-color-gray
+    font-weight: 700
+    position: relative
+    color: $main-color
+    +r(740)
+      padding-bottom: 0
+      &:before
+        display: none
+    +r(475)
+      padding: 20px 0 0
+    &:before
+      content: ""
+      position: absolute
+      bottom: 0
+      left: 0
+      right: 0
+      margin: auto
+      width: 50%
+      height: 1px
+      background: $main-color-gray
+    &:last-child
+      padding-bottom: 0
+      margin-bottom: 0
+      &:before
+        display: none
+  &__mid-list
+    margin: 30px 0
+    +rm
+      margin: 0
+  &__mid-item
+    color: $main-color
+    margin: 20px 0
+  &__mid-text
+    line-height: 1.5
+    display: block
+    padding: 9px 0
+    position: relative
+    +rm
+      font-size: 14px
+      padding: 0
+    &:before
+      transition: all .3s ease
+      content: ""
+      position: absolute
+      bottom: 0
+      left: 0
+      height: 1px
+      width: 40px
+      background: $main-color-gray
+  &__download
+    margin: 10px auto 30px
+    display: block
+  &__mid-list
+    text-align: left
+  a
+    +line
+    display: inline-block

@@ -1,0 +1,25 @@
+.nav
+  padding-top: 15px
+  border-top: solid 1px $main-color-gray
+  &__list
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+    white-space: nowrap
+    +r(920)
+      justify-content: flex-start
+    +r(630)
+      flex-direction: column
+  &__item
+    font-size: 13px
+    margin: 0 5px
+    +r(920)
+      margin: 0 20px 0 0
+    +line
+    +r(630)
+      &:before
+        right: 0
+        margin: auto
+
+

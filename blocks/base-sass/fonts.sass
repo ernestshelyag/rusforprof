@@ -1,0 +1,20 @@
+=font-face($font-family, $file-path, $weight: normal, $style: normal)
+  @font-face
+      font-family: $font-family
+      src: url('#{$file-path}.woff2') format('woff2'), url('#{$file-path}.woff') format('woff'),  url('#{$file-path}.ttf') format('truetype')
+      font-weight: $weight
+      font-style: $style
+
++font-face('lato', '../fonts/lato-hairline-webfont', 100)
++font-face('lato', '../fonts/lato-thin-webfont', 200)
++font-face('lato', '../fonts/lato-light-webfont', 300)
++font-face('lato', '../fonts/lato-regular-webfont', 400)
++font-face('lato', '../fonts/lato-medium-webfont', 500)
++font-face('lato', '../fonts/lato-semibold-webfont', 600)
++font-face('lato', '../fonts/lato-bold-webfont', 700)
++font-face('lato', '../fonts/lato-heavy-webfont', 800)
++font-face('lato', '../fonts/lato-black-webfont', 900)
++font-face('lato', '../fonts/lato-italic-webfont', 400, italic)
++font-face('lato', '../fonts/lato-bolditalic-webfont', 700, italic)
+
++font-face('OSX', '../fonts/OSX')

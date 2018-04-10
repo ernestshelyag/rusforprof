@@ -1,0 +1,57 @@
+.news-block
+  height: 100%
+  &__list
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    min-height: calc(100% - 50px)
+    width: 340px
+    +r(1210)
+      min-height: auto
+    +r(767)
+      width: 100%
+  &__item
+    margin-bottom: 40px
+    &:last-child
+      margin-bottom: 0
+  &__info-block
+    +r(767)
+      height: 181px
+    +r(740)
+      height: 342px
+      overflow: hidden
+      +fade
+    +r(570)
+      height: calc(150px + 45vh)
+  &__img
+    +r(767)
+      float: left
+      margin-right: 20px
+    +r(570)
+      float: none
+      width: 100%
+      margin-right: 0
+  &__name
+    display: block
+    margin-top: 7px
+    +r(767)
+      margin-top: 0
+    +r(570)
+      margin-top: 7px
+  &__text-block
+    overflow: hidden
+    max-height: 110px
+    +fade
+    +r(767)
+      max-height: 115px
+    +r(740)
+      max-height: 300px
+      display: inline
+  &__link
+    margin-top: 15px
+    +r(740)
+      display: block
+      margin: 20px auto 0
+
+
+

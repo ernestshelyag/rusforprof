@@ -1,0 +1,26 @@
+mixin header()
+  +b.HEADER.header
+    +e.DIV.top
+      +e.DIV.item
+        +e.A.logo-block(href="index.html")
+          +e.IMG.logo(src="img/logo.png")
+      +e.DIV.item.header__item_middle
+        +e.SPAN.up-text межвузовский онлайн-портал
+        +e.H1.title Русский язык — язык специальности
+      +e.DIV.item.header__item_right
+        +e.SPAN.info-item.header__info-item_address
+          | Россия, Санкт-Петербург,
+          br
+          | наб. Лейтенанта Шмидта, д. 11/2, 203
+        +e.SPAN.info-item.header__info-item_phone
+          a(href="tel: +7812329421") +7 (812) 332-94-21
+          | e-mail: info@ropryal.ru
+        +e.FORM.info-item.header__info-item_search
+          +e.INPUT.search(placeholder="Поиск..." type="text")
+          +e.INPUT.submit(type="submit" value="")
+    +e.DIV.hidden
+      +e.SPAN.up-text межвузовский онлайн-портал
+      +e.DIV.title Русский язык — язык специальности
+    +nav()
+
+

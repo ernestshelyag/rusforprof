@@ -1,0 +1,179 @@
+.filter-block
+  padding: 20px 0
+  display: flex
+  justify-content: center
+  margin: auto
+  font-weight: 600
+  border-bottom: solid 1px $main-color-gray
+  position: relative
+  line-height: 1.5
+  +r(1218)
+    padding: 10px 0
+    &:before
+      display: none
+  &:before
+    content: ""
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    margin: auto
+    width: 50%
+    height: 1px
+    background: $main-color-gray
+  +r(830)
+    justify-content: flex-start
+  +r(630)
+    flex-direction: column
+    align-items: center
+  &__item
+    padding: 0 20px 0 30px
+    position: relative
+    +r(630)
+      margin-top: 10px
+    &:before
+      content: ""
+      position: absolute
+      width: 20px
+      height: 20px
+      top: 0
+      bottom: 0
+      left: 0
+      border: solid 1px $main-color-gray
+    &.active::before
+      background-image: url("../img/gal.png")
+      background-position: center
+      background-size: 70%
+      background-repeat: no-repeat
+
+.vuz-content
+  &__item
+    margin-bottom: 40px
+    padding-bottom: 40px
+    position: relative
+    +r(740)
+      padding-bottom: 0
+      &:before
+        display: none
+    &:before
+      content: ""
+      position: absolute
+      bottom: 0
+      left: 0
+      right: 0
+      margin: auto
+      width: 50%
+      height: 1px
+      background: $main-color-gray
+    &:last-child
+      padding-bottom: 0
+      margin-bottom: 0
+      &:before
+        display: none
+  &__info-block
+    height: 222px
+    +r(767)
+      height: 181px
+      overflow: visible
+      &:after
+        display: none
+    +r(740)
+      height: 342px
+      overflow: hidden
+      +fade
+      &:after
+        display: block
+    +r(570)
+      height: 450px
+  &__img
+    width: 270px
+    height: 270px
+    border: solid 1px $main-color-gray
+    float: left
+    margin-right: 20px
+    background-repeat: no-repeat
+    background-size: 80%
+    background-position: center
+    +r(570)
+      float: none
+      margin: auto
+  &__name
+    display: block
+    margin-top: 0
+    margin-bottom: 5px
+    +r(767)
+      margin-top: 0
+    +r(570)
+      margin-top: 7px
+  &__date
+    color: $main-color
+    font-style: italic
+    padding: 10px 0
+    display: inline-block
+    margin-top: 5px
+    position: relative
+    +r(1200)
+      display: block
+      text-align: right
+      padding: 5px 0
+      margin-top: 0
+      font-size: 12px
+      &:before, &:after
+        display: none
+    &:before, &:after
+      content: ""
+      position: absolute
+      left: 0
+      height: 1px
+      width: 40px
+      background: $main-color-gray
+    &:before
+      bottom: 0
+    &:after
+      top: 0
+  &__text-block
+    overflow: hidden
+    +fade
+    max-height: 115px
+    +r(767)
+      max-height: 115px
+      display: block
+    +r(740)
+      max-height: 300px
+      display: inline
+  &__text
+    +r(740)
+      overflow: visible
+  &__link
+    margin: 0 0 0 200px
+    +r(1200)
+      margin: 0 auto
+    +r(767)
+      display: inline-block
+      margin: 0 auto
+    +r(740)
+      display: block
+      margin: 20px auto 0
+  &__table
+    display: flex
+    justify-content: space-between
+    align-items: center
+    border-top: solid 1px $main-color-gray
+    border-bottom: solid 1px $main-color-gray
+    min-height: 50px
+    +r(570)
+      flex-direction: column
+      border: none
+      align-items: flex-start
+      //height: auto
+  &__table-item
+    border-right: solid 1px $main-color-gray
+    flex-grow: 1
+    text-align: center
+    +r(570)
+      border: none
+    &:first-child
+      text-align: left
+    &:last-child
+      border-right: none
+      text-align: right

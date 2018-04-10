@@ -1,0 +1,98 @@
+.books-block
+  &__title
+    margin-top: 10px
+  &__item
+    margin-bottom: 40px
+    padding-bottom: 40px
+    position: relative
+    +r(1218)
+      padding-bottom: 0
+      &:before
+        display: none
+    &:before
+      content: ""
+      position: absolute
+      bottom: 0
+      left: 0
+      right: 0
+      margin: auto
+      width: 365px
+      height: 1px
+      background: $main-color-gray
+    &:last-child
+      padding-bottom: 0
+      margin-bottom: 0
+      &:before
+        display: none
+  &__info-block
+    height: 181px
+    +r(1218)
+      height: 342px
+      overflow: hidden
+      +fade
+    +r(1027)
+      height: calc(150px + 45vh)
+      max-height: 500px
+    +r(767)
+      height: 181px
+      overflow: visible
+      &:after
+        display: none
+    +r(740)
+      height: 342px
+      overflow: hidden
+      &:after
+        display: block
+    +r(570)
+      height: calc(150px + 45vh)
+  &__img
+    float: left
+    margin-right: 20px
+    +r(1027)
+      float: none
+      width: 100%
+      margin-right: 0
+    +r(767)
+      float: left
+      width: 340px
+      margin-right: 20px
+    +r(570)
+      float: none
+      width: 100%
+      margin-right: 0
+  &__name
+    display: block
+    margin-top: 0
+    +r(1027)
+      margin-top: 7px
+    +r(767)
+      margin-top: 0
+    +r(570)
+      margin-top: 7px
+  &__text-block
+    overflow: hidden
+    +fade
+    max-height: 115px
+    +r(1218)
+      max-height: 300px
+      display: inline
+    +r(767)
+      max-height: 115px
+      display: block
+    +r(740)
+      max-height: 300px
+      display: inline
+  &__text
+    +r(740)
+      overflow: visible
+  &__link
+    margin-top: 15px
+    +r(1218)
+      display: block
+      margin: 20px auto 0
+    +r(767)
+      display: inline-block
+      margin: 0 auto
+    +r(740)
+      display: block
+      margin: 20px auto 0

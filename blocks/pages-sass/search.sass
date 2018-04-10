@@ -1,0 +1,212 @@
+.search
+  +wrp
+  &__content
+    border-top: solid 1px $main-color-gray
+    +r(580)
+      border: none
+  &__title-block
+    +r(830)
+      margin: 15px 0
+  &__form
+    position: relative
+  &__input
+    width: 100%
+    height: 44px
+    line-height: 34px
+    padding: 0 40px 0 15px
+    border: solid 1px $main-color-gray
+  &__submit
+    position: absolute
+    background-color: transparent
+    cursor: pointer
+    border: none
+    top: 0
+    bottom: 0
+    margin: auto
+    right: 12px
+    width: 23px
+    height: 16px
+    background-image: url("../img/loup.svg")
+    background-repeat: no-repeat
+    background-size: contain
+    background-position: right
+    border-left: solid 1px $main-color-gray
+.search-block
+  padding: 30px 0
+  border-bottom: solid 1px $main-color-gray
+  &__top
+    padding-bottom: 20px
+    position: relative
+    line-height: 1.5
+    +r(1218)
+      padding-bottom: 0
+      &:before
+        display: none
+    &:before
+      content: ""
+      position: absolute
+      bottom: 0
+      left: 0
+      right: 0
+      margin: auto
+      width: 50%
+      height: 1px
+      background: $main-color-gray
+  &__text
+    padding: 0 5px
+  &__sort
+    padding-top: 20px
+    display: flex
+    justify-content: center
+    margin: auto
+    font-weight: 600
+    +r(830)
+      justify-content: flex-start
+    +r(630)
+      flex-direction: column
+      align-items: center
+  &__sort-item
+    padding: 0 10px
+    position: relative
+    padding-right: 20px
+    +r(630)
+      margin-top: 10px
+.active-down
+  color: $main-color-darker
+  &:before
+    content: ""
+    position: absolute
+    top: 3px
+    right: 0
+    border: 6px solid transparent
+    border-top: 10px solid $main-color
+
+.active-up
+  color: $main-color-darker
+  &:before
+    content: ""
+    position: absolute
+    top: -3px
+    right: 0
+    border: 6px solid transparent
+    border-bottom: 10px solid $main-color
+
+.search-content
+  &__item
+    margin-bottom: 40px
+    padding-bottom: 40px
+    position: relative
+    +r(1218)
+      padding-bottom: 0
+      &:before
+        display: none
+    &:before
+      content: ""
+      position: absolute
+      bottom: 0
+      left: 0
+      right: 0
+      margin: auto
+      width: 50%
+      height: 1px
+      background: $main-color-gray
+    &:last-child
+      padding-bottom: 0
+      &:before
+        display: none
+  &__info-block
+    height: 181px
+    +r(767)
+      height: 181px
+      overflow: visible
+      &:after
+        display: none
+    +r(740)
+      overflow: hidden
+      +fade
+      &:after
+        display: block
+  &__name
+    color: $main-color-darker
+    display: block
+    margin-top: 0
+    +r(767)
+      margin-top: 0
+    +r(570)
+      margin-top: 7px
+  &__date
+    color: $main-color
+    font-style: italic
+    padding: 10px 0
+    display: inline-block
+    margin-top: 5px
+    position: relative
+    +r(1200)
+      display: block
+      text-align: right
+      padding: 5px 0
+      margin-top: 0
+      font-size: 12px
+      &:before, &:after
+        display: none
+    &:before, &:after
+      content: ""
+      position: absolute
+      left: 0
+      height: 1px
+      width: 40px
+      background: $main-color-gray
+    &:before
+      bottom: 0
+    &:after
+      top: 0
+  &__text-block
+    overflow: hidden
+    +fade
+    max-height: 115px
+    +r(767)
+      max-height: 115px
+      display: block
+    +r(740)
+      max-height: 300px
+      display: inline
+  &__text
+    +r(740)
+      overflow: visible
+  &__link
+    margin: 15px auto 0
+    display: block
+    +r(1200)
+      margin: 15px auto 0
+    +r(767)
+      display: inline-block
+      margin: 0 auto
+    +r(740)
+      display: block
+      margin: 20px auto 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

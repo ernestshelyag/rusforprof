@@ -1,0 +1,82 @@
+.slider-block
+  +rm
+    display: none
+  &__slider
+    height: 527px
+  &__slide
+    position: relative
+    +bg-norm
+    height: 527px!important
+  &__text-block
+    color: $main-color
+    +vcenter
+    top: 35%
+    left: 35%
+  &__up-text
+    font-size: 40px
+    font-weight: 800
+    padding: 14px 0
+    margin-bottom: 50px
+    position: relative
+    display: block
+    &:before
+      content: ""
+      position: absolute
+      bottom: 0
+      left: 0
+      height: 2px
+      width: 92px
+      background: $main-color
+  &__text
+    font-size: 19px
+    font-weight: 600
+    font-style: italic
+
+  //-----
+
+  .slick-dots
+    bottom: 50px
+    li > button
+      &:before
+        transition: all .5s
+        content: ""
+        border: solid 2px $main-color
+        border-radius: 50%
+  .slick-active
+    button
+      &:before
+        border: solid 5px $main-color!important
+  .slick-dotted.slick-slider
+    margin-bottom: 0
+  .slick-arrow
+    z-index: 500
+    width: 50px
+    height: 50px
+  .slick-next
+    right: 15%
+    +r(1530)
+      right: 100px
+    +r(1260)
+      right: 30px
+    &:before
+      content: ""
+      width: 50px
+      height: 50px
+      display: block
+      border-top: solid 2px $main-color
+      border-right: solid 2px $main-color
+      transform: rotate(45deg)
+  .slick-prev
+    left: 15%
+    +r(1530)
+      left: 100px
+    +r(1260)
+      left: 30px
+    &:before
+      content: ""
+      width: 50px
+      height: 50px
+      display: block
+      border-top: solid 2px $main-color
+      border-right: solid 2px $main-color
+      transform: rotate(-135deg)

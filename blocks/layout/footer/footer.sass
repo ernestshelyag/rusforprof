@@ -1,0 +1,40 @@
+.footer
+  min-height: 201px
+  +wrp
+  &__bottom-block
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-top: 41px
+    font-size: 13.5px
+    +r(920)
+      flex-direction: column
+      align-items: flex-start
+    +r(630)
+      align-items: center
+      text-align: center
+  &__text
+    line-height: 2
+    font-weight: 600
+.developer
+  +r(630)
+    margin: 20px 0
+  &__link
+    margin-left: 50px
+    +line
+    &:after
+      content: ""
+      position: absolute
+      top: 0
+      bottom: 0
+      margin: auto
+      left: -40px
+      background-repeat: no-repeat
+      background-size: contain
+      background-image: url("../img/logo-indis.png")
+      width: 30px
+      height: 33px
+
+
+
+
